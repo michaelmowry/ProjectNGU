@@ -25,6 +25,8 @@ namespace ProjectNGU
             app.UseStatusCodePages();
             app.UseStaticFiles();
             app.UseMvcWithDefaultRoute();
+
+            //Test push
         }
     }
 }
