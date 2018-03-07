@@ -8,16 +8,16 @@ namespace ProjectNGU.Models
 {
     public class ProfileRepository : IProfileRepository
     {
-        private readonly MockProfileRepository _appDbContext;
+        private readonly AppDbContext _appDbContext;
 
-        public ProfileRepository(MockProfileRepository appDbContext)
+        public ProfileRepository(AppDbContext appDbContext)
         {
             _appDbContext = appDbContext;
         }
 
         public User GetUserByUserId(int userId)
         {
-            return _appDbContext.GetUserByUserId(userId);
+            return _appDbContext.Users.FirstOrDefault(p => p.UserId == userId);
         }
     }
 }
