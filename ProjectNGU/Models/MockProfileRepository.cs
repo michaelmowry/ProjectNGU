@@ -1,4 +1,5 @@
 ﻿using ProjectNGU.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -19,10 +20,8 @@ namespace ProjectNGU.Models
         {
             _users = new List<User>
             {
-                new User {UserId = 1, LegalFirstName = "Apple Pie", LegalLastName = "Mowry"},
-                new User {UserId = 2, LegalFirstName = "Blueberry Cheese Cake", LegalLastName = "Mowry"},
-                new User {UserId = 3, LegalFirstName = "Cheese Cake", LegalLastName = "Mowry"},
-                new User {UserId = 4, LegalFirstName = "Cherry Pie", LegalLastName = "Mowry"},
+                    new User { UserId = 1, LegalFirstName = "Michael", LegalLastName = "Mowry", PreferredFirstName = null, FormerLegalLastName = null, LegalMiddleName = "Shane", Gender = "Male", BirthDate = new DateTime(1977, 11, 15), ResidentialAddress = new Address { AddressId = 1, StreetAddressLine1 = "1367 S. Country Club Dr.", StreetAddressLine2 = "Unit 1014", City = "Mesa", State = "AZ", ZipCode = "85210" }, MailingAddress = new Address { AddressId = 2, StreetAddressLine1 = "1367 S. Country Club Dr.", StreetAddressLine2 = "Unit 1014", City = "Mesa", State = "AZ", ZipCode = "85210" } },
+                    new User { UserId = 2, LegalFirstName = "Harper", LegalLastName = "Mowry", PreferredFirstName = null, FormerLegalLastName = null, LegalMiddleName = "Jade", Gender = "Female", BirthDate = new DateTime(2008, 8, 24), ResidentialAddress = new Address { AddressId = 3, StreetAddressLine1 = "1367 S. Country Club Dr.", StreetAddressLine2 = "Unit 1014", City = "Mesa", State = "AZ", ZipCode = "85210" }, MailingAddress = new Address { AddressId = 4, StreetAddressLine1 = "1367 S. Country Club Dr.", StreetAddressLine2 = "Unit 1014", City = "Mesa", State = "AZ", ZipCode = "85210" } }
             };
         }
 
