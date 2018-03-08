@@ -1,48 +1,45 @@
-﻿@model ProjectNGU.Model.User
+﻿@model ProfileSettingsViewModel
 
-<h2>@Model.Title</h2>
-
-<h4>User</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
         <form asp-action="View">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="UserId" />
+            <input type="hidden" asp-for="@Model.User.UserId" />
             <div class="form-group">
-                <label asp-for="LegalFirstName" class="control-label"></label>
-                <input asp-for="LegalFirstName" class="form-control" />
-                <span asp-validation-for="LegalFirstName" class="text-danger"></span>
+                <label asp-for="@Model.User.LegalFirstName" class="control-label"></label>
+                <input asp-for="@Model.User.LegalFirstName" class="form-control" />
+                <span asp-validation-for="@Model.User.LegalFirstName" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="LegalMiddleName" class="control-label"></label>
-                <input asp-for="LegalMiddleName" class="form-control" />
-                <span asp-validation-for="LegalMiddleName" class="text-danger"></span>
+                <label asp-for="@Model.User.LegalMiddleName" class="control-label"></label>
+                <input asp-for="@Model.User.LegalMiddleName" class="form-control" />
+                <span asp-validation-for="@Model.User.LegalMiddleName" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="LegalLastName" class="control-label"></label>
-                <input asp-for="LegalLastName" class="form-control" />
-                <span asp-validation-for="LegalLastName" class="text-danger"></span>
+                <label asp-for="@Model.User.LegalLastName" class="control-label"></label>
+                <input asp-for="@Model.User.LegalLastName" class="form-control" />
+                <span asp-validation-for="@Model.User.LegalLastName" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="PreferredFirstName" class="control-label"></label>
-                <input asp-for="PreferredFirstName" class="form-control" />
-                <span asp-validation-for="PreferredFirstName" class="text-danger"></span>
+                <label asp-for="@Model.User.PreferredFirstName" class="control-label"></label>
+                <input asp-for="@Model.User.PreferredFirstName" class="form-control" />
+                <span asp-validation-for="@Model.User.PreferredFirstName" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="FormerLegalLastName" class="control-label"></label>
-                <input asp-for="FormerLegalLastName" class="form-control" />
-                <span asp-validation-for="FormerLegalLastName" class="text-danger"></span>
+                <label asp-for="@Model.User.FormerLegalLastName" class="control-label"></label>
+                <input asp-for="@Model.User.FormerLegalLastName" class="form-control" />
+                <span asp-validation-for="@Model.User.FormerLegalLastName" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="BirthDate" class="control-label"></label>
-                <input asp-for="BirthDate" class="form-control" />
-                <span asp-validation-for="BirthDate" class="text-danger"></span>
+                <label asp-for="@Model.User.BirthDate" class="control-label"></label>
+                <input asp-for="@Model.User.BirthDate" class="form-control" />
+                <span asp-validation-for="@Model.User.BirthDate" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Gender" class="control-label"></label>
-                <input asp-for="Gender" class="form-control" />
-                <span asp-validation-for="Gender" class="text-danger"></span>
+                <label asp-for="@Model.User.Gender" class="control-label"></label>
+                <input asp-for="@Model.User.Gender" class="form-control" />
+                <span asp-validation-for="@Model.User.Gender" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <input type="submit" value="Save" class="btn btn-default" />

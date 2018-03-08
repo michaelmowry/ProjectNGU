@@ -31,6 +31,8 @@ namespace ProjectNGU
                 {
                     //Log it
                 }
+
+                host.Run();
             }
         }
 

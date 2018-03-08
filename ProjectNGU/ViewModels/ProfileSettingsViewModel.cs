@@ -11,6 +11,6 @@ namespace ProjectNGU.ViewModels
     {
         public string Title { get; set; }
 
-        public User UserProfile { get; set; } 
+        public Model.User User { get; set; } 
     }
 }

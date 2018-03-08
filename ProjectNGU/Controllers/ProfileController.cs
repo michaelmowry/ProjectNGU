@@ -27,17 +27,17 @@ namespace ProjectNGU.Controllers
             return View(profileViewModel);
         }
 
-        [Route("[controller]/ProfileSettings/{id}")]
-        public IActionResult ProfileSettings(int userId)
+        //[Route("[controller]/ProfileSettings/{id}")]
+        public IActionResult ProfileSettings(int id)
         {
-            var user = _profileRepository.GetUserByUserId(userId);
+            var user = _profileRepository.GetUserByUserId(id);
 
             if(user == null)
             {
-                throw new Exception();
+                return NotFound();
             }
 
-            return View(new ProfileSettingsViewModel() { Title = "Profile Settings", UserProfile = user });
+            return View(new ProfileSettingsViewModel() { Title = "Profile Settings", User = user });
         }
     }
 }

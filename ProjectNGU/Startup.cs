@@ -42,7 +42,7 @@ namespace ProjectNGU
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Profile}/{action=ProfileSettings}/{id?}");
+                    template: "{controller=Home}/{action=Index}/{id?}");
             });
         }
     }
